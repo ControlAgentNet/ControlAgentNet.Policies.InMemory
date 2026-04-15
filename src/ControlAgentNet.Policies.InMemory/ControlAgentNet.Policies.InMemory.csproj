@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>ControlAgentNet.Policies.InMemory</AssemblyName>
+    <RootNamespace>ControlAgentNet.Policies.InMemory</RootNamespace>
+    <Description>In-memory implementation of the ControlAgentNet policy stores for development and testing.</Description>
+    <PackageId>ControlAgentNet.Policies.InMemory</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ControlAgentNet.Policies\ControlAgentNet.Policies.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="..\..\samples\**" />
+    <None Remove="..\..\samples\**" />
+    <Compile Remove="..\..\tests\**" />
+    <None Remove="..\..\tests\**" />
+  </ItemGroup>
+
+</Project>
