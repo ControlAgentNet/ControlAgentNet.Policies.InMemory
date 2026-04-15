@@ -16,8 +16,8 @@ This repository uses `VersionPrefix` from `Directory.Build.props` as the source 
 3. Create the tag:
 
 ```bash
-git tag v0.1.1
-git push origin v0.1.1
+git tag v0.1.2
+git push origin v0.1.2
 ```
 
 The CI workflow will build and pack the tagged version exactly.
